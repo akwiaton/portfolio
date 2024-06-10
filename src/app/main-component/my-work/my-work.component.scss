@@ -1,0 +1,39 @@
+@import './../../../styles.scss';
+
+section{
+    padding: 100px;
+}
+
+.my-work-headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 60px;
+    >h2 {
+        font-family: 'Baloo 2';
+        font-size: 96px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: $blue;
+    }
+    >img {
+        width: 108px;
+        height: 108px;
+        margin-bottom: 120px;
+    }
+}
+
+.my-work-descrition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >p{
+        width: 50%;
+    }
+    >img {
+        width: 183px;
+        height: 183px;
+    }
+}
