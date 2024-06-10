@@ -37,3 +37,49 @@ section{
         height: 183px;
     }
 }
+
+.project-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    >div {
+        width: 50%;
+    }
+    >img {
+        width: 100%;
+    }
+}
+
+.project-name {
+
+    >p {
+        font-family: 'Baloo 2';
+        font-size: 45px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        line-height: 54px;
+        color: $blue;
+    }
+    >h2 {
+        color: $blue;
+        line-height: 27px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    >span {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.project-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 60px;
+    >button {
+        margin-right: 20px;
+    }
+}

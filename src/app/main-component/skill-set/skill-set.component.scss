@@ -30,18 +30,18 @@ section {
     .tech-stack-first-row {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        // flex-wrap: wrap;
+        justify-content: space-evenly;
         align-items: center;
-        gap: 150px;
+        // gap: 150px;
     }
     .tech-stack-second-row {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        // flex-wrap: wrap;
+        justify-content: space-evenly;
         align-items: center;
-        gap: 150px;
+        // gap: 150px;
     }
 
     .tech-stack-icon {
