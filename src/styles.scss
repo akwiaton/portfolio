@@ -25,10 +25,12 @@ button {
     padding: 15px 30px;
     font-size: 23px;
     font-weight: 500;
-    // transition einfügen
+    transition: transform 0.2s;
     &:hover {
-        background-color: $blue; 
-        color: white;
+      transform: scale(1.2);
+      background-color: $blue; 
+      background-image: linear-gradient(to bottom right, rgba(89, 136, 255, 1),rgba(89, 136, 255, 1), rgba(0, 67, 240, 1));
+      color: white;
     }
 }
 /* baloo-2-regular - latin */
