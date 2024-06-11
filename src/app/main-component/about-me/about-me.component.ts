@@ -10,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
 
+  goToContact() {
+    if (window) {
+      window.location.href = '#contact';
+    }
+  }
 }

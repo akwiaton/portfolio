@@ -10,13 +10,10 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     >img {
         width: 64px;
         height: auto;
-    }
-    >p {
-        color: white;
     }
 }
 
@@ -26,7 +23,34 @@ footer {
     align-items: center;
     gap: 42px;
     >img {
-        width: 30px;
+        width: 40px;
         height: auto;
+        transition: transform 0.1s ease;
+        &:hover {
+            transform: scale(1.4);
+            
+        }
+    }
+}
+
+.impressum-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    >p {
+        color: white;
+        font-weight: 32px;
+        letter-spacing: 1px;
+    }
+    >a {
+        color: white;
+        text-decoration: none;
+        transition: font-weight 0.1s ease;
+        &:hover {
+            font-weight: 600;
+            border-bottom: 3px solid white;
+        }
     }
 }

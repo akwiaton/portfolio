@@ -2,7 +2,12 @@
     <div class="footer-content">
 
         <img src="./assets/img/logo.png" alt="">
-        <p>© Alicja Kwiaton 2024</p>
+
+        <div class="impressum-content">
+            <p>© Alicja Kwiaton 2024</p>
+            <a [routerLink]="['/imprint']" routerLinkActive="router-link-active">Impressum</a>
+        </div>
+
         <div class="footer-social-icons">
             <img src="./assets/img/Github button.svg" alt="">
             <img src="./assets/img/Email button.svg" alt="">
@@ -13,5 +18,4 @@
     </div>
 
 
-<a [routerLink]="['/imprint']" routerLinkActive="router-link-active">Impressum</a>
 </footer>
