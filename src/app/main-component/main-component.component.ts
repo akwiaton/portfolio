@@ -5,11 +5,12 @@ import { FooterComponent } from '../shared/footer/footer.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillSetComponent } from './skill-set/skill-set.component';
 import { MyWorkComponent } from './my-work/my-work.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-main-component',
   standalone: true,
-  imports: [CommonModule, LandingpageComponent, AboutMeComponent, FooterComponent, SkillSetComponent, MyWorkComponent],
+  imports: [CommonModule, LandingpageComponent, AboutMeComponent, FooterComponent, SkillSetComponent, MyWorkComponent, ContactComponent],
   templateUrl: './main-component.component.html',
   styleUrl: './main-component.component.scss'
 })

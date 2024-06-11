@@ -4,14 +4,14 @@
         <img src="./assets/img/ellipse.svg" alt="circle">
     </div>
 
-    <div class="my-work-descrition">
+    <div class="my-work-description">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolor commodi ducimus quia consequuntur iure enim vero, ipsam corrupti atque! Cupiditate optio consequuntur omnis natus quidem dignissimos expedita alias beatae.</p>
         <img src="./assets/img/ellipse.svg" alt="circle">
     </div>
 @for (project of projects; track $index) {
-    <div class="project-wrapper">
+    <div class="project-wrapper" [ngClass]="{'rowReverse':project.isRowReverse}">
        <img src="{{ project.img }}" alt=""> 
-        <div class="project-name">
+        <div class="project-name" [ngClass]="{'rowReverse':project.isRowReverse}" >
            <p>{{ project.name }}</p> 
            <h2>{{ project.title }}</h2>
            <span> {{ project.description }}</span>

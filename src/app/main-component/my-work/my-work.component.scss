@@ -25,7 +25,7 @@ section{
     }
 }
 
-.my-work-descrition {
+.my-work-description {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,16 +39,32 @@ section{
 }
 
 .project-wrapper {
-    width: 90%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 100px;
     >div {
-        width: 50%;
+        width: 40%;
     }
     >img {
-        width: 60%;
+        width: 50%;
+    }
+}
+
+.rowReverse {
+    flex-direction: row-reverse;
+    >p {
+        text-align: end;
+    }
+    >h2 {
+        text-align: end;
+    }
+    >span {
+        text-align: end;
+    }
+    div {
+        justify-content: flex-end;
     }
 }
 
@@ -80,6 +96,6 @@ section{
     align-items: center;
     margin-top: 60px;
     >button {
-        margin-right: 20px;
+        margin-right: 30px;
     }
 }

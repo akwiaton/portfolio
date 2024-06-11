@@ -8,7 +8,10 @@ interface Project {
   description: string;
   projectLink: string;
   codeLink: string
+  isRowReverse: boolean,
 }
+
+
 
 @Component({
   selector: 'app-my-work',
@@ -26,7 +29,8 @@ export class MyWorkComponent {
     title: "JavaScript | CSS | HTML",
     description: "Der Aufgabenmanager orientiert sich am Kanban-System. Er ermöglicht das Organisieren und Sortieren von Aufgaben mithilfe der Drag-and-Drop-Funktion sowie das Erstellen von Kontakten, die man den Aufgaben zuweisen kann.",
     projectLink: "Live Test",
-    codeLink: "Github"
+    codeLink: "Github",
+    isRowReverse: false,
   },
   {
     img: "./assets/img/project-1.png",
@@ -34,8 +38,10 @@ export class MyWorkComponent {
     title: "JavaScript | CSS | HTML",
     description: "El Pollo Loco ist ein Jump&Run Spiel, das auf einem objektorientierten Ansatz basiert. Probieren Sie es aus und helfen Sie Pepe, Münzen und Tabasco-Flaschen zu sammeln, um gegen den verrückten Hahn zu kämpfen.",
     projectLink: "Live Test",
-    codeLink: "Github"
+    codeLink: "Github",
+    isRowReverse: true,
   },
   ]
+rowReverse: string|string[]|Set<string>|{ [klass: string]: any; }|null|undefined;
 
 }

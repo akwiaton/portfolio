@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+
+//   window.addEventListener('scroll', function() {
+//     if (window.scrollY > 0) {
+//         nav.style.backgroundColor = '#eef3ff';
+//     } else {
+//         nav.style.backgroundColor = 'transparent';
+//     }
+// });
 
 }
