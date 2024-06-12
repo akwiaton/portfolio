@@ -14,7 +14,19 @@ $blue: #5988ff;
     font-size: 23px;
     font-weight: 400;
     line-height: 27px;
+
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $blue; 
+  border-radius: 10px;
+}
+
+
 
 button {
     cursor: pointer;
@@ -33,6 +45,10 @@ button {
       background-image: linear-gradient(to bottom right, rgba(89, 136, 255, 1),rgba(89, 136, 255, 1), rgba(0, 67, 240, 1));
       color: white;
     }
+}
+
+a {
+    text-decoration: none;
 }
 /* baloo-2-regular - latin */
 @font-face {

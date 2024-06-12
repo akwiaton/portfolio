@@ -8,6 +8,12 @@
         <p>Entdecken Sie hier eine Auswahl meiner Arbeiten und interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.</p>
         <img src="./assets/img/ellipse.svg" alt="circle">
     </div>
+    <div class="circle-container">
+        <img class="first-circle" src="./assets/img/ellipse.svg" >
+        <!-- horizonatale scrollbalken -->
+        <img class="second-circle" src="./assets/img/ellipse.svg" >
+        <img class="third-circle" src="./assets/img/ellipse.svg" >
+    </div>
 @for (project of projects; track $index) {
     <div class="project-wrapper" [ngClass]="{'rowReverse':project.isRowReverse}">
        <img src="{{ project.img }}" alt=""> 

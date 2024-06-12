@@ -1,56 +1,62 @@
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
 
 footer {
-    height: 100%;
-    padding: 100px;
-    background-color: $blue;
-    background-image: linear-gradient(to right, rgba(89, 136, 255, 1),rgba(89, 136, 255, 1), rgba(0, 67, 240, 1));
+  height: 100%;
+  padding: 100px;
+  background-color: $blue;
+  background-image: linear-gradient(
+    to right,
+    rgba(89, 136, 255, 1),
+    rgba(89, 136, 255, 1),
+    rgba(0, 67, 240, 1)
+  );
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    >img {
-        width: 64px;
-        height: auto;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  > img {
+    width: 64px;
+    height: auto;
+  }
 }
 
 .footer-social-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 42px;
-    >img {
-        width: 40px;
-        height: auto;
-        transition: transform 0.1s ease;
-        &:hover {
-            transform: scale(1.4);
-            
-        }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+  > a {
+    > img {
+      width: 40px;
+      height: auto;
+      transition: transform 0.1s ease;
+      &:hover {
+        transform: scale(1.4);
+      }
     }
+  }
 }
 
 .impressum-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    >p {
-        color: white;
-        font-weight: 32px;
-        letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  > p {
+    color: white;
+    font-weight: 32px;
+    letter-spacing: 1px;
+  }
+  > a {
+    color: white;
+    text-decoration: none;
+    transition: font-weight 0.1s ease;
+    &:hover {
+      font-weight: 600;
+      border-bottom: 3px solid white;
     }
-    >a {
-        color: white;
-        text-decoration: none;
-        transition: font-weight 0.1s ease;
-        &:hover {
-            font-weight: 600;
-            border-bottom: 3px solid white;
-        }
-    }
+  }
 }

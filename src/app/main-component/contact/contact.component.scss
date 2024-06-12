@@ -1,88 +1,148 @@
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
 
 section {
-    height: 100%;
-    padding: 100px;
-    >h2 {
-        font-family: 'Baloo 2';
-        font-size: 96px;
-        font-weight: 800;
-        letter-spacing: 1px;
-        color: $blue;
-    }
+  height: 100%;
+  padding: 100px;
+  > h2 {
+    font-family: "Baloo 2";
+    font-size: 96px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: $blue;
+    margin-bottom: 150px;
+  }
 }
 
 .contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 100px;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
 }
 
 .contact-info {
-    width: 50%;
-    >h3 {
-        font-family: 'Baloo 2';
-        font-size: 32px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        line-height: 38px;
-        color: $blue;
+  width: 50%;
+  margin: 30px 0 20px 0;
+  > h3 {
+    font-family: "Baloo 2";
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: $blue;
+  }
+  > p {
+    margin: 32px 0 32px 0;
+  }
+  > span {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: $blue;
+    > b {
+      font-weight: 600;
     }
-    >p {
-        margin: 32px 0 32px 0;
-    }
-    >span {
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 1px;
-        color: $blue;
-        >b {
-            font-weight: 600;
-        }
-    }
+  }
+}
+
+.contact-info-under {
+  width: 57%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+  > img {
+    width: 204px;
+    height: 204px;
+  }
 }
 
 .contact-form {
-    width: 50%;
-    >form {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        >input, >textarea {
-            width: 80%;
-            height: 50px;
-            border: 1px solid $blue;
-            border-radius: 10px;
-            padding: 0 20px;
-            resize: vertical;
-            box-sizing: border-box;
-        }
-        >textarea {
-            height: 200px;
-            padding: 20px;
-        }
+  width: 50%;
+  > form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    > input,
+    > textarea {
+      width: 80%;
+      height: 50px;
+      border: 1px solid $blue;
+      border-radius: 10px;
+      padding: 0 20px;
+      resize: vertical;
+      box-sizing: border-box;
     }
+    > textarea {
+      height: 200px;
+      padding: 20px;
+    }
+  }
+}
+
+.contact-form-under {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -40px;
+  > img {
+    width: 73px;
+    height: 73px;
+  }
 }
 
 .policy-confirmation {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    >label {
-        font-size: 16px;
-        line-height: 18px;
-    }
-    >input {
-        width: 24px;
-        // border: 1px solid $blue !important;
-        // border-radius: 10px;
-    }
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  > label {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  > input {
+    width: 24px;
+    // border: 1px solid $blue !important;
+    // border-radius: 10px;
+  }
 }
 
 .send-btn {
-    width: 85%;
-    display: flex;
-    justify-content: center;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -20px;
+}
+
+.privat-policy-link {
+  // font-size: 14px;
+  > a {
+    color: $blue;
+    font-size: 16px;
+    &:hover {
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+}
+
+.contact-scroll-up {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  > a {
+    margin-top: 150px;
+    > img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.1s ease;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
