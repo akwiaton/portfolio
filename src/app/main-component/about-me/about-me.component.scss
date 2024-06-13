@@ -1,50 +1,81 @@
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
 
 .circle {
-    display: flex;
-    justify-content: center;
-    >img {
-        width: 206px;
-        z-index: 100;
-        position: absolute;
-        top: 93%
-        // top: 1300px;
-    }
+  display: flex;
+  justify-content: center;
+  > img {
+    width: 206px;
+    z-index: 100;
+    position: absolute;
+    top: 93%;
+    // top: 1300px;
+  }
 }
 
 section {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 90px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 90px;
 }
 
 .left-side {
-    width: 50%;
-    >p {
-     
-        color: $blue;
-        font-family: 'Baloo 2' !important;
-        font-weight: 800;
-        font-size: 121px;
-        line-height: 130px;
-        letter-spacing: 1px;
-    }
+  width: 50%;
+  > p {
+    color: $blue;
+    font-family: "Baloo 2" !important;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 110px;
+    letter-spacing: 1px;
+  }
 }
 
 .right-side {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 100px;
-    margin-left: 180px;
-    >img {
-        width: 82px;
-        height: 82px;
-    }
-    >p {
-        line-height: 27px;
-    }
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  margin-left: 180px;
+  > img {
+    width: 82px;
+    height: 82px;
+  }
+  > p {
+    line-height: 27px;
+  }
 }
+
+@media only screen and (max-width: 1460px) {
+  .left-side {
+    >p{
+        font-size: 80px;
+        letter-spacing: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+    section {
+        flex-direction: column;
+    }
+    .left-side {
+        margin-top: 100px;
+        width: 80%;
+        text-align: center;
+      >p{
+          font-size: 64px;
+          line-height: 80px;
+      }
+    }
+    .right-side {
+      margin-left: 0;
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+
+  }

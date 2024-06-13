@@ -25,18 +25,18 @@ nav {
     z-index: 1000;
     > a {
       &:hover {
-        font-weight: 800;
+        font-weight: 600;
         transform: scale(1.2);
       }
     }
   }
 
   a {
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 400;
     text-decoration: none;
     color: $blue;
-    margin-inline: 36px;
-    transition: all 0.3s;
+    margin-inline: 20px;
+    transition: all 0.1s;
   }
 }

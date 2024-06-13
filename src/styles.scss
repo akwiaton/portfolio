@@ -1,11 +1,11 @@
 $blue: #5988ff;
 
-@mixin dFlex($jc: center, $ai: center, $g: 0px) {
-  display: flex;
-  justify-content: $jc;
-  align-items: $ai;
-  gap: $g;
-}
+// @mixin dFlex($jc: center, $ai: center, $g: 0px) {
+//   display: flex;
+//   justify-content: $jc;
+//   align-items: $ai;
+//   gap: $g;
+// }
 
 * {
     margin: 0;
@@ -24,6 +24,10 @@ $blue: #5988ff;
 ::-webkit-scrollbar-thumb {
   background: $blue; 
   border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 
