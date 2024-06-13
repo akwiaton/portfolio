@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MainComponentComponent } from './main-component/main-component.component';
+import { TranslationService } from './translation.service';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +13,6 @@ import { MainComponentComponent } from './main-component/main-component.componen
 })
 export class AppComponent {
   title = 'portfolio';
+
+  
 }

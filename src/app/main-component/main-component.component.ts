@@ -6,6 +6,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillSetComponent } from './skill-set/skill-set.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { ContactComponent } from './contact/contact.component';
+import { TranslationService } from '../translation.service';
 
 @Component({
   selector: 'app-main-component',

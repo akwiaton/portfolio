@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslationService } from '../../translation.service';
 
 interface Project {
   img: string;
@@ -24,7 +25,7 @@ export class MyWorkComponent {
 
   projects: Project[] = [
   {
-    img: "./assets/img/project-2.png",
+    img: "./assets/img/project-2.1.png",
     name: "Join",
     title: "JavaScript | CSS | HTML",
     description: "Der Aufgabenmanager orientiert sich am Kanban-System. Er ermöglicht das Organisieren und Sortieren von Aufgaben mithilfe der Drag-and-Drop-Funktion sowie das Erstellen von Kontakten, die man den Aufgaben zuweisen kann.",
@@ -33,7 +34,7 @@ export class MyWorkComponent {
     isRowReverse: false,
   },
   {
-    img: "./assets/img/project-1.png",
+    img: "./assets/img/project-1.1.png",
     name: "Pollo Loco",
     title: "JavaScript | CSS | HTML",
     description: "El Pollo Loco ist ein Jump&Run Spiel, das auf einem objektorientierten Ansatz basiert. Probieren Sie es aus und helfen Sie Pepe, Münzen und Tabasco-Flaschen zu sammeln, um gegen den verrückten Hahn zu kämpfen.",
