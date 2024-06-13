@@ -1,23 +1,14 @@
 <div id="about-me" class="circle">
-    <img class="ellipse" src="./assets/img/ellipse.png" alt="" />
+  <img class="ellipse" src="./assets/img/ellipse.png" alt="" />
 </div>
-<section >
+<section>
+  <div class="left-side">
+    <p>{{ "ABOUTME.workTogether" | translate }}</p>
+  </div>
 
-<div class="left-side">
-<p>Zusammenarbeit <br> verbindet</p>
-</div>
-
-<div class="right-side">
-
+  <div class="right-side">
     <img class="ellipse-small" src="./assets/img/ellipse.png" alt="" />
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-    <button (click)="goToContact()">Send me a message</button>
-
-
-</div>
-
-
-
-
-
+    <p>{{ "ABOUTME.workTogetherText" | translate }}</p>
+    <button (click)="goToContact()">{{ 'ABOUTME.send' | translate }}</button>
+  </div>
 </section>

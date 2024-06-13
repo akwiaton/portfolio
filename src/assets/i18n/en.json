@@ -1,4 +1,41 @@
 {
-    "frontend": "Web_EN",
-    "developer": "Developer"
+  "HEADER": {
+    "aboutMe": "About me",
+    "skillSet": "Skill set",
+    "myWork": "My work"
+  },
+  "HOME": {
+    "greet": "Hello! I'm Alicja",
+    "developer": "DEVELOPER"
+  },
+  "ABOUTME": {
+    "workTogether": "Let's work together",
+    "workTogetherText": "Welcome to my site! As a front-end developer specializing in JavaScript and Angular, I bring a unique perspective to the world of web design. My roots in digital marketing allow me to create not only technically sophisticated, but also strategically thought-out web presences. I look forward to working with you to develop innovative solutions and turn your visions into reality.",
+    "send": "send me a message"
+},
+"MYSKILLS": {
+    "mySkills": "My skills"
+},
+
+"MYWORK": {
+    "myWork": "My work",
+    "myWorkDescription": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "projectDescription": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+},
+
+"CONTACT": {
+    "contact": "Contact",
+    "contactHeadline": "Got a problem to solve?",
+    "contactDescription": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "contactUnderline": "Need a Frontend developer?",
+    "contactUnderlineBold": "Contact me!",
+    "contactForm": "I've read the", 
+    "privatPolicy": "privacy policy", 
+    "contactFormEnd": "and agree to processing of my data as outlined.",
+    "formBtn": "Send",
+    "formErrorName": "Please enter your name",
+    "formErrorEmail": "Please enter a valid email-address",
+    "formErrorMessage": "Please enter a message"
+}
+
 }

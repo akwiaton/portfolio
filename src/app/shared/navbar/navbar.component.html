@@ -1,9 +1,9 @@
 <nav>
     <img src="./assets/img/logo.png" alt="logo">
     <div>
-        <a href="#about-me">Über mich</a>
-        <a href="#my-skills">Tech-Stack</a>
-        <a href="#my-projects">Projekte</a>
+        <a href="#about-me">{{ 'HEADER.aboutMe' | translate }}</a>
+        <a href="#my-skills">{{ 'HEADER.skillSet' | translate }}</a>
+        <a href="#my-projects">{{ 'HEADER.myWork' | translate }}</a>
         <a (click)="translate.switchLanguage('de')" href="#">DE</a>|
         <a (click)="translate.switchLanguage('en')" href="#">EN</a>
     </div>

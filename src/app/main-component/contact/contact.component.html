@@ -1,12 +1,12 @@
 <section id="contact">
-<h2>Kontakt</h2>
+<h2>{{ 'CONTACT.contact' | translate }}</h2>
 
 <div class="contact-content">
 
     <div class="contact-info">
-        <h3>Wie kann ich helfen?</h3>
-        <p>Ich freue mich auf spannende Kooperationsmöglichkeiten und innovative Projekte. Zögern Sie nicht, Kontakt aufzunehmen, um gemeinsam neue Wege zu entdecken!</p>
-        <span>Brauchen Sie einen Frontend Developer? <b>Melden Sie sich!</b> </span>
+        <h3>{{ 'CONTACT.contactHeadline' | translate }}</h3>
+        <p>{{ 'CONTACT.contactDescription' | translate }}</p>
+        <span>{{ 'CONTACT.contactUnderline' | translate }} <b>{{ 'CONTACT.contactUnderlineBold' | translate }}</b></span>
         <div class="contact-info-under">
             <img src="./assets/img/ellipse.svg" >
         </div>
@@ -19,25 +19,25 @@
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <input #name = "ngModel" minlength="3" [(ngModel)]="contactData.name" [ngModelOptions]="{standalone: true}" type="text" placeholder="Name" required />
             @if(!name.valid && name.touched && !name.disabled) {
-                <div class="error-message">Bitte geben Sie Ihren Namen ein</div>
+                <div class="error-message">{{ 'CONTACT.formErrorName' | translate }}</div>
             }
             <input #email = "ngModel" [(ngModel)]="contactData.email" [ngModelOptions]="{standalone: true}" type="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
             @if(!email.valid && email.touched && !email.disabled) {
-                <div class="error-message">Bitte geben Sie Ihren E-Mail ein</div>
+                <div class="error-message">{{ 'CONTACT.formErrorEmail' | translate }}</div>
             }
             <textarea #message="ngModel" minlength="4" [ngModelOptions]="{standalone: true}" [(ngModel)]="contactData.message" placeholder="Message" required></textarea>
             @if(!message.valid && message.touched && !message.disabled) {
-                <div class="error-message">Bitte  geben Sie Ihre Nachricht ein</div>
+                <div class="error-message">{{ 'CONTACT.formErrorMessage' | translate }}</div>
             }
             <div class="policy-confirmation">
                 <input type="checkbox" required />
         
-                <label class="privat-policy-link" for="checkbox">Ich habe die
-                    <a href="privat-policy">Datenschutzerklärung</a> gelesen und akzeptiere diese</label>
+                <label class="privat-policy-link" for="checkbox">{{ 'CONTACT.contactForm' | translate }}
+                    <a href="privat-policy">{{ 'CONTACT.privatPolicy' | translate }}</a> {{ 'CONTACT.contactFormEnd' | translate }}</label>
             </div>
             <div class="send-btn">
-                <!-- <input type="submit" value="submit"> -->
-                <button type="submit" value="Submit" disabled>Senden</button>
+    
+                <button type="submit" value="Submit" disabled>{{ 'CONTACT.formBtn' | translate }}</button>
             </div>
         </form>
         <div class="contact-form-under">

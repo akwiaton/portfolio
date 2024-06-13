@@ -1,8 +1,43 @@
-
 {
-   
-        "frontend": "Web_DE",
-        "developer": "Entwickler"
+ "HEADER": {
+    "aboutMe": "Über mich",
+    "skillSet": "Tech Stack",
+    "myWork": "Projekte"
+ },
 
-  
+  "HOME": {
+    "greet": "Hallo! Ich bin Alicja",
+    "developer": "ENTWICKLER"
+  },
+
+  "ABOUTME": {
+    "workTogether": "Zusammenarbeit verbindet",
+    "workTogetherText": "Willkommen auf meiner Seite! Als Frontend-Entwickler mit einer Spezialisierung auf JavaScript und Angular, bringe ich eine einzigartige Perspektive in die Welt des Webdesigns. Meine Wurzeln im Digital Marketing ermöglichen es mir, nicht nur technisch anspruchsvolle, sondern auch strategisch durchdachte Webauftritte zu erstellen.",
+    "send": "Kontaktieren Sie mich"
+},
+    "MYSKILLS": {
+        "mySkills": "Meine Skills"
+    },
+
+    "MYWORK": {
+        "myWork": "Meine Projekte",
+        "myWorkDescription": "Entdecken Sie hier eine Auswahl meiner Arbeiten und interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+        "projectDescription": "Task-manager Tool orientiert sich am Kanban-System. Er ermöglicht das Organisieren und Sortieren von Aufgaben mithilfe der Drag-and-Drop-Funktion sowie das Erstellen von Kontakten, die man den Aufgaben zuweisen kann."
+    },
+
+    "CONTACT": {
+        "contact": "Kontakt",
+        "contactHeadline": "Wie kann ich helfen?",
+        "contactDescription": "Ich freue mich auf spannende Kooperationsmöglichkeiten und innovative Projekte. Zögern Sie nicht, Kontakt aufzunehmen, um gemeinsam neue Wege zu entdecken!",
+        "contactUnderline": "Brauchen Sie einen Frontend Developer?",
+        "contactUnderlineBold": "Kontaktieren Sie mich!",
+        "contactForm": "Ich habe die", 
+        "privatPolicy": "Datenschutzerklärung", 
+        "contactFormEnd": "gelesen und akzeptiere diese",
+        "formBtn": "Senden",
+        "formErrorName": "Bitte geben Sie Ihren Namen ein",
+        "formErrorEmail": "Bitte geben Sie Ihren E-Mail ein",
+        "formErrorMessage": "Bitte  geben Sie Ihre Nachricht ein"
+
+    }
 }
