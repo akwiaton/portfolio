@@ -149,22 +149,21 @@ section {
 @media only screen and (max-width: 1130px) {
   section {
     padding: 50px;
-    >h2 {
+    > h2 {
       margin-bottom: 50px;
     }
   }
- .contact-content {
-  gap: 20px;
- }
- .contact-form-under {
-  margin-top: 20px;
- }
+  .contact-content {
+    gap: 20px;
+  }
+  .contact-form-under {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 730px) {
-
   .contact-content {
-  flex-direction: column;
+    flex-direction: column;
   }
   .contact-info {
     width: 100%;
@@ -176,18 +175,17 @@ section {
     display: none;
   }
   .contact-scroll-up {
-    >a {
+    > a {
       margin-top: 50px;
     }
   }
-
 }
 
 @media only screen and (max-width: 450px) {
   section {
-    >h2 {
-     font-size: 45px;
-     line-height: 54px;
+    > h2 {
+      font-size: 45px;
+      line-height: 54px;
     }
   }
   .contact-info {
@@ -205,5 +203,4 @@ section {
       line-height: 21px;
     }
   }
-
 }
