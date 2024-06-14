@@ -201,7 +201,7 @@ section {
 
 @media only screen and (max-width: 566px) {
   .my-work-headline {
-    >h2 {
+    > h2 {
       font-size: 48px;
       line-height: 48px;
     }
@@ -220,7 +220,6 @@ section {
   }
   .project-links {
     flex-direction: column;
-    gap: 30px
+    gap: 30px;
+  }
 }
-}
-
