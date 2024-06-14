@@ -19,8 +19,11 @@
         <div class="project-name" [ngClass]="{'rowReverse':project.isRowReverse}" >
            <p>{{ project.name }}</p> 
            <h2>{{ project.title }}</h2>
-           <span> {{ project.description }}</span>
-           
+           @if (!project.isRowReverse) {
+               <span> {{ project.description | translate }}</span>
+           } @else {
+            <span> {{ project.description | translate }}</span>
+           }          
             <div class="project-links">
                 <button>{{ project.projectLink }}</button>
                 <button>{{ project.codeLink }}</button>

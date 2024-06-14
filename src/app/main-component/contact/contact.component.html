@@ -21,7 +21,7 @@
             @if(!name.valid && name.touched && !name.disabled) {
                 <div class="error-message">{{ 'CONTACT.formErrorName' | translate }}</div>
             }
-            <input #email = "ngModel" [(ngModel)]="contactData.email" [ngModelOptions]="{standalone: true}" type="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
+            <input #email = "ngModel" [(ngModel)]="contactData.email" [ngModelOptions]="{standalone: true}" type="email" placeholder="Email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$" />
             @if(!email.valid && email.touched && !email.disabled) {
                 <div class="error-message">{{ 'CONTACT.formErrorEmail' | translate }}</div>
             }

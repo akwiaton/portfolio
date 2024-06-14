@@ -19,8 +19,13 @@
 
 "MYWORK": {
     "myWork": "My work",
-    "myWorkDescription": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-    "projectDescription": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    "myWorkDescription": "Explore a selection of my work here - Interact with projects to see my skills in action."
+   
+},
+
+"PROJECT": {
+  "projectJoin": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+  "projectPolloLoco":"A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the giant Chicken."
 },
 
 "CONTACT": {
