@@ -17,7 +17,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 90px;
+  padding: 100px;
 }
 
 .left-side {
@@ -60,10 +60,11 @@ section {
 @media only screen and (max-width: 1160px) {
     section {
         flex-direction: column;
+        padding: 50px;
     }
     .left-side {
         margin-top: 100px;
-        width: 80%;
+        width: 100%;
         text-align: center;
       >p{
           font-size: 64px;
@@ -72,10 +73,36 @@ section {
     }
     .right-side {
       margin-left: 0;
-      width: 80%;
+      width: 100%;
+      align-items: flex-end;
+      gap: 50px;
     }
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 570px) {
+    .left-side {
+      >p{
+          font-size: 45px;
+          letter-spacing: 0;
+          line-height: 54px;
+      }
+    }
+    .right-side {
+      >p{
+          font-size: 18px;
+          line-height: 21px;
+      }
+     }
+  }
 
+  @media only screen and (max-width: 430px) {
+    section {
+      padding: 50px 20px 50px 20px;
+    }
+    .left-side {
+      >p{
+          font-size: 36px;
+          line-height: 52px;
+      }
+    }
   }
