@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   top: 0;
-  z-index: 10;
+  // z-index: 10;
   width: 100%;
   max-width: 1920px;
   height: 117px;
@@ -205,7 +205,7 @@ h2 {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 150px;
-    margin-left: 50px;
+    margin-left: 10px;
 
   }
 
@@ -242,4 +242,23 @@ h2 {
     top: -160px;    
    }
 
+ }
+
+ @media only screen and (max-width: 480px) {
+  .photo-wrapper {
+    top: 0;
+    >img {
+      height: 500px;
+    }
+
+  }
+ }
+
+ @media only screen and (max-width: 350px) {
+  .photo-wrapper {
+    >img {
+      height: 450px;
+    }
+
+  }
  }
