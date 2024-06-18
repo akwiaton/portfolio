@@ -35,7 +35,6 @@ nav {
     display: none;
   }
 
-
   a {
     font-size: 23px;
     font-weight: 400;
@@ -53,7 +52,7 @@ nav {
   z-index: 1000;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 100;
   .popup {
     position: relative;
@@ -69,7 +68,7 @@ nav {
       gap: 30px;
       flex-direction: column;
       margin-right: 0;
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-size: 23px;
       > a {
         color: $blue;
@@ -78,7 +77,7 @@ nav {
           transform: scale(1.2);
         }
       }
-      >div {
+      > div {
         a {
           color: $blue;
           &:hover {
@@ -103,14 +102,6 @@ nav {
       }
     }
   }
-//   section {
-// >img {
-//   width: 64px;
-//   height: 64px;
-//   margin-left: 5px;
-//   z-index: 1000;
-// }
-//  }
 }
 
 @media only screen and (max-width: 1063px) {
@@ -123,5 +114,4 @@ nav {
       display: block;
     }
   }
-
 }
