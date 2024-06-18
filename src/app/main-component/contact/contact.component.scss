@@ -100,8 +100,6 @@ section {
   }
   > input {
     width: 24px;
-    // border: 1px solid $blue !important;
-    // border-radius: 10px;
   }
 }
 
@@ -124,6 +122,7 @@ section {
 }
 
 .privat-policy-link {
+  font-size: 16px;
   > a {
     color: $blue;
     font-size: 16px;

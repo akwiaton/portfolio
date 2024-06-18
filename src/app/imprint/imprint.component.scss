@@ -1,5 +1,11 @@
 @import "./../../styles.scss";
 
+div {
+    >img {
+        width: 100px;
+        padding: 100px 50px 0px 100px;
+    }
+}
 section {
   padding: 100px;
   > h1 {

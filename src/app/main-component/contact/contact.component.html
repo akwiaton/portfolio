@@ -70,11 +70,10 @@
               }
             </div>
           </div>
-          <label class="privat-policy-link" for="checkbox"
-            >{{ "CONTACT.contactForm" | translate }}
-            <a href="privat-policy">{{ "CONTACT.privatPolicy" | translate }}</a>
-            {{ "CONTACT.contactFormEnd" | translate }}</label
-          >
+          <div class="privat-policy-link" for="checkbox"> {{ "CONTACT.contactForm" | translate }}
+          <a [routerLink]="['/imprint']" routerLinkActive="router-link-active">{{ "CONTACT.privatPolicy" | translate }}</a>
+          {{ "CONTACT.contactFormEnd" | translate }}</div
+        >
         </div>
         <div class="send-btn">
           @if (contactForm.valid && privacyPolicyChecked) {
