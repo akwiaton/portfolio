@@ -109,7 +109,13 @@ section {
   width: 85%;
   display: flex;
   justify-content: center;
+  .button-disbaled {
+    pointer-events: none;
+    border: solid 2px #bbbbbb;
+    color: #bbbbbb;
+  }
 }
+
 
 .error-message {
   color: red;

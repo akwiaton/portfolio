@@ -34,8 +34,8 @@ export class MyWorkComponent {
     name: "Join",
     title: "JavaScript | CSS | HTML",
     description: "PROJECT.projectJoin",
-    projectLink: "Live Test",
-    codeLink: "Github",
+    projectLink: "https://join.alicja-kwiaton.de",
+    codeLink: "https://github.com/akwiaton/join",
     isRowReverse: false,
   },
   {
@@ -43,8 +43,8 @@ export class MyWorkComponent {
     name: "Pollo Loco",
     title: "JavaScript | CSS | HTML",
     description: "PROJECT.projectPolloLoco",
-    projectLink: "Live Test",
-    codeLink: "Github",
+    projectLink: "https://pollo-loco.alicja-kwiaton.de",
+    codeLink: "https://github.com/akwiaton/el_pollo_loco",
     isRowReverse: true,
   },
   ]

@@ -1,49 +1,93 @@
 <section id="contact">
-<h2>{{ 'CONTACT.contact' | translate }}</h2>
+  <h2>{{ "CONTACT.contact" | translate }}</h2>
 
-<div class="contact-content">
-
+  <div class="contact-content">
     <div class="contact-info">
-        <h3>{{ 'CONTACT.contactHeadline' | translate }}</h3>
-        <p>{{ 'CONTACT.contactDescription' | translate }}</p>
-        <span>{{ 'CONTACT.contactUnderline' | translate }} <b>{{ 'CONTACT.contactUnderlineBold' | translate }}</b></span>
-        <div class="contact-info-under">
-            <img src="./assets/img/ellipse.svg" >
-        </div>
-        <div class="contact-scroll-up">
-            <a href="#start"><img src="./assets/img/go-up-btn.svg" ></a> 
-        </div>
+      <h3>{{ "CONTACT.contactHeadline" | translate }}</h3>
+      <p>{{ "CONTACT.contactDescription" | translate }}</p>
+      <span
+        >{{ "CONTACT.contactUnderline" | translate }}
+        <b>{{ "CONTACT.contactUnderlineBold" | translate }}</b></span
+      >
+      <div class="contact-info-under">
+        <img src="./assets/img/ellipse.svg" />
+      </div>
+      <div class="contact-scroll-up">
+        <a href="#start"><img src="./assets/img/go-up-btn.svg" /></a>
+      </div>
     </div>
 
     <div class="contact-form">
-        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-            <input #name = "ngModel" minlength="3" [(ngModel)]="contactData.name" [ngModelOptions]="{standalone: true}" type="text" placeholder="Name" required />
-            @if(!name.valid && name.touched && !name.disabled) {
-                <div class="error-message">{{ 'CONTACT.formErrorName' | translate }}</div>
-            }
-            <input #email = "ngModel" [(ngModel)]="contactData.email" [ngModelOptions]="{standalone: true}" type="email" placeholder="Email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$" />
-            @if(!email.valid && email.touched && !email.disabled) {
-                <div class="error-message">{{ 'CONTACT.formErrorEmail' | translate }}</div>
-            }
-            <textarea #message="ngModel" minlength="4" [ngModelOptions]="{standalone: true}" [(ngModel)]="contactData.message" placeholder="Message" required></textarea>
-            @if(!message.valid && message.touched && !message.disabled) {
-                <div class="error-message">{{ 'CONTACT.formErrorMessage' | translate }}</div>
-            }
-            <div class="policy-confirmation">
-                <input type="checkbox" required />
-        
-                <label class="privat-policy-link" for="checkbox">{{ 'CONTACT.contactForm' | translate }}
-                    <a href="privat-policy">{{ 'CONTACT.privatPolicy' | translate }}</a> {{ 'CONTACT.contactFormEnd' | translate }}</label>
-            </div>
-            <div class="send-btn">
-    
-                <button type="submit" value="Submit" disabled>{{ 'CONTACT.formBtn' | translate }}</button>
-            </div>
-        </form>
-        <div class="contact-form-under">
-            <img src="./assets/img/ellipse.svg" >
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <input
+          #name="ngModel"
+          minlength="3"
+          [(ngModel)]="contactData.name"
+          [ngModelOptions]="{ standalone: true }"
+          type="text"
+          placeholder="Name"
+          required
+        />
+        @if(!name.valid && name.touched && !message.disabled) {
+        <div class="error-message">
+          {{ "CONTACT.formErrorName" | translate }}
         </div>
-    
+        }
+        <input
+          #email="ngModel"
+          [(ngModel)]="contactData.email"
+          [ngModelOptions]="{ standalone: true }"
+          type="email"
+          placeholder="Email"
+          required
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$"
+        />
+        @if(!email.valid && email.touched) {
+        <div class="error-message">
+          {{ "CONTACT.formErrorEmail" | translate }}
+        </div>
+        }
+        <textarea
+          #message="ngModel"
+          minlength="4"
+          [ngModelOptions]="{ standalone: true }"
+          [(ngModel)]="contactData.message"
+          placeholder="Message"
+          required
+        ></textarea>
+        @if(!message.valid && message.touched) {
+        <div class="error-message">
+          {{ "CONTACT.formErrorMessage" | translate }}
+        </div>
+        }
+        <div class="policy-confirmation">
+          <div class="terms_container">
+            <div (click)="togglePrivacyPolicy()">
+              @if (privacyPolicyChecked == false) {
+              <img src="./assets/img/check_box_outline.svg" />
+              } @else {
+              <img src="./assets/img/check_box.svg" />
+              }
+            </div>
+          </div>
+          <label class="privat-policy-link" for="checkbox"
+            >{{ "CONTACT.contactForm" | translate }}
+            <a href="privat-policy">{{ "CONTACT.privatPolicy" | translate }}</a>
+            {{ "CONTACT.contactFormEnd" | translate }}</label
+          >
+        </div>
+        <div class="send-btn">
+          @if (contactForm.valid && privacyPolicyChecked) {
+          <button type="submit">{{ "CONTACT.formBtn" | translate }}</button>}
+          @else {
+          <button class="button-disbaled">
+            {{ "CONTACT.formBtn" | translate }}</button
+          >}
+        </div>
+      </form>
+      <div class="contact-form-under">
+        <img src="./assets/img/ellipse.svg" />
+      </div>
     </div>
-</div>
+  </div>
 </section>
