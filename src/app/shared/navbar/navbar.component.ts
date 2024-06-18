@@ -13,30 +13,19 @@ import { TranslateModule } from '@ngx-translate/core';
 export class NavbarComponent {
   isScreenSmall: boolean = false;
   open = false;
-  openMenu: boolean = false;
+  logoUrl = './assets/img/logo.png';
+
 
 translate = inject(TranslationService);
 
-checkSize() {
-  window.innerWidth <= 1060;
+changeLogo() {
+  if (this.open) {
+    this.logoUrl = './assets/img/logo-blue.svg';
+  } else {
+    this.logoUrl = './assets/img/logo.png';
+  }
 }
 
-ngOnInit() {
-  this.checkScreenSize();
-}
-
-@HostListener('window:resize', ['$event'])
-onResize() {
-  this.checkScreenSize();
-}
-
-checkScreenSize() {
-  this.isScreenSmall = window.innerWidth <= 1060;
-}
-
-// getDynamicClass() {
-//   return this.openMenu ? 'menu-icon active' : 'menu-icon inactive';
-// }
 toggleMenu() {
   if (this.open == false) {
     this.open = true;
@@ -47,6 +36,7 @@ toggleMenu() {
 
 closeMenu() {
   this.open = false;
+
 }
 
 }

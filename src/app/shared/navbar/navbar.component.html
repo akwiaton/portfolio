@@ -1,5 +1,5 @@
 <nav>
-  <img class="logo" src="./assets/img/logo.png" alt="logo" />
+   <img [src]="logoUrl" alt="logo">
   <div id="myLinks">
     <a href="#about-me">{{ "HEADER.aboutMe" | translate }}</a>
     <a href="#my-skills">{{ "HEADER.skillSet" | translate }}</a>
@@ -7,27 +7,23 @@
     <a (click)="translate.switchLanguage('de')" href="#">DE</a>|
     <a (click)="translate.switchLanguage('en')" href="#">EN</a>
   </div>
-  <a class="burger-menu" (click)="toggleMenu()"><img src="./assets/img/burger-menu.svg"/></a>
+  <a class="burger-menu" (click)="toggleMenu(); changeLogo()"><img src="./assets/img/burger-menu.svg"/></a>
 
 </nav>
 @if (open) {
     <div class="popup_background">
-      <!-- <section>
-        <img class="logo-blue" src="./assets/img/logo-blue.svg" alt="logo" />
-        <img (click)="closeMenu()" src="./assets/img/close-btn.svg" alt="logo" />
-      </section> -->
       <div class="popup">
         <div class="link_container_mobile">
-          <a href="#about-me" (click)="closeMenu()">{{
+          <a href="#about-me" (click)="closeMenu(); changeLogo()">{{
             "HEADER.aboutMe" | translate
           }}</a>
-          <a href="#my-skills" (click)="closeMenu()">{{
+          <a href="#my-skills" (click)="closeMenu(); changeLogo()">{{
             "HEADER.skillSet" | translate
           }}</a>
-          <a href="#my-projects" (click)="closeMenu()">{{
+          <a href="#my-projects" (click)="closeMenu(); changeLogo()">{{
             "HEADER.myWork" | translate
           }}</a>
-          <a href="#contact" (click)="closeMenu()">{{
+          <a href="#contact" (click)="closeMenu(); changeLogo()">{{
             "HEADER.contact" | translate
           }}</a>
           <div>
