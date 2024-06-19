@@ -57,7 +57,7 @@ arrowBtn = './assets/img/go-up-btn.svg';
     else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       // zum testen das selbe hier einfügen
       console.log('form daten gesendet', this.contactData);
-      ngForm.reset();
+      ngForm.resetForm();
       // this.contactData= {
       //   name: '',
       //   email: '',

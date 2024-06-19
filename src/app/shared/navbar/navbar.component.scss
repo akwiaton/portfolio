@@ -9,13 +9,14 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
+  // position: fixed;
   top: 0;
   z-index: 800;
   > img {
     width: 64px;
     height: 64px;
     margin-left: 5px;
+    z-index: 800;
   }
 
   > div {

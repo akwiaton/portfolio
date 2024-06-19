@@ -13,16 +13,17 @@
         <img src="./assets/img/ellipse.svg" />
       </div>
       <div class="contact-scroll-up">
-        <a href="#start"><img src="./assets/img/go-up-btn.svg"
-          onmouseover="this.src='./assets/img/arrow-btn-trsp.svg'"
-     onmouseout="this.src='./assets/img/go-up-btn.svg'" /></a>
-        <!-- <a href="#start"><img [src]="arrowBtn" /></a> -->
+        <a href="#start"
+          ><img
+            src="./assets/img/go-up-btn.svg"
+            onmouseover="this.src='./assets/img/arrow-btn-trsp.svg'"
+            onmouseout="this.src='./assets/img/go-up-btn.svg'"
+        /></a>
       </div>
     </div>
 
     <div class="contact-form">
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      
         <input
           #name="ngModel"
           [ngClass]="{ outline_red: !name.valid && name.touched }"
@@ -77,15 +78,19 @@
               }
             </div>
           </div>
-          <div class="privat-policy-link" for="checkbox"> {{ "CONTACT.contactForm" | translate }}
-          <a [routerLink]="['/imprint']" routerLinkActive="router-link-active">{{ "CONTACT.privatPolicy" | translate }}</a>
-          {{ "CONTACT.contactFormEnd" | translate }}</div
-        >
+          <div class="privat-policy-link" for="checkbox">
+            {{ "CONTACT.contactForm" | translate }}
+            <a
+              [routerLink]="['/imprint']"
+              routerLinkActive="router-link-active"
+              >{{ "CONTACT.privatPolicy" | translate }}</a
+            >
+            {{ "CONTACT.contactFormEnd" | translate }}
+          </div>
         </div>
         <div class="send-btn">
           @if (contactForm.valid && privacyPolicyChecked) {
-          <button >{{ "CONTACT.formBtn" | translate }}</button>}
-          @else {
+          <button>{{ "CONTACT.formBtn" | translate }}</button>} @else {
           <button class="button-disbaled">
             {{ "CONTACT.formBtn" | translate }}</button
           >}
