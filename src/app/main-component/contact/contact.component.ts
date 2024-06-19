@@ -26,9 +26,10 @@ export class ContactComponent {
 
   mailTest = true; // wenn auf dem server auf false setzen
   privacyPolicyChecked = false;
+arrowBtn = './assets/img/go-up-btn.svg';
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://alicja-kwiaton.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -52,11 +53,25 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } 
+    else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       // zum testen das selbe hier einfügen
-      ngForm.resetForm();
+      console.log('form daten gesendet', this.contactData);
+      ngForm.reset();
+      // this.contactData= {
+      //   name: '',
+      //   email: '',
+      //   message: '',
+      // };
     }
   }
+
+  // onSubmit(ngForm: NgForm) {
+  //   if (ngForm.valid && ngForm.submitted) {
+      
+  //     console.log(this.contactData);
+  //   }
+  // }
 
   togglePrivacyPolicy() {
     this.privacyPolicyChecked = !this.privacyPolicyChecked;

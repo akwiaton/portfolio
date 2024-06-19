@@ -71,6 +71,12 @@ section {
       padding: 0 20px;
       resize: vertical;
       box-sizing: border-box;
+      &:focus {
+        outline: 2px solid $blue;
+      }
+      &:hover {
+        outline: 2px solid $blue;
+      }
     }
     > textarea {
       height: 200px;
@@ -143,12 +149,13 @@ section {
     > img {
       width: 40px;
       height: 40px;
-      transition: transform 0.1s ease;
-    }
-    &:hover {
-      transform: scale(1.2);
     }
   }
+}
+
+.outline_red {
+  outline: 1px solid #e61c40;
+  border: 1px solid #e61c40 !important;
 }
 
 @media only screen and (max-width: 1130px) {
