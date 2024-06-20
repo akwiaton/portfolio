@@ -14,7 +14,7 @@
     <div class="popup_background">
       <div class="popup">
         <div class="link_container_mobile">
-          <img (click)="closeMenu()" src="./assets/img/close-btn.svg" alt="">
+          <img (click)="closeMenu(); changeLogo()" src="./assets/img/close-btn.svg" alt="">
           <a href="#about-me" (click)="closeMenu(); changeLogo()">{{
             "HEADER.aboutMe" | translate
           }}</a>

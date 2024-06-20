@@ -34,7 +34,7 @@ export class MyWorkComponent {
     name: "Join",
     title: "JavaScript | CSS | HTML",
     description: "PROJECT.projectJoin",
-    projectLink: "https://join.alicja-kwiaton.de",
+    projectLink: "https://join.alicja-kwiaton.de/index.html",
     codeLink: "https://github.com/akwiaton/join",
     isRowReverse: false,
   },
