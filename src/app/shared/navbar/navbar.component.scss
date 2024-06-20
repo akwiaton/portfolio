@@ -55,6 +55,7 @@ nav {
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 100;
+
   .popup {
     position: relative;
     top: 25%;
@@ -62,6 +63,13 @@ nav {
     text-align: center;
     margin-top: 30px;
     z-index: 1200;
+    >img {
+      width: 64px;
+      height: 64px;
+      z-index: 1200;
+      position: absolute;
+      top: 250px;
+    }
     .link_container_mobile {
       display: flex;
       justify-content: center;
@@ -71,6 +79,11 @@ nav {
       margin-right: 0;
       font-family: "Montserrat";
       font-size: 23px;
+      >img {
+        width: 46px;
+        height: 46px;
+        z-index: 1200;
+      }
       > a {
         color: $blue;
         &:hover {

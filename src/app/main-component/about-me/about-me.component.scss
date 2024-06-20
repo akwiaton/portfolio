@@ -79,6 +79,9 @@ section {
 }
 
 @media only screen and (max-width: 570px) {
+  section {
+    padding: 0;
+  }
   .left-side {
     > p {
       font-size: 45px;
@@ -96,7 +99,7 @@ section {
 
 @media only screen and (max-width: 430px) {
   section {
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 0 20px;
   }
   .left-side {
     > p {
