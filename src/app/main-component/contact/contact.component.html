@@ -26,10 +26,11 @@
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <input
           #name="ngModel"
+          name="name"
           [ngClass]="{ outline_red: !name.valid && name.touched }"
           minlength="3"
           [(ngModel)]="contactData.name"
-          [ngModelOptions]="{ standalone: true }"
+        
           type="text"
           placeholder="Name"
           required
@@ -41,9 +42,9 @@
         }
         <input
           #email="ngModel"
+          name="email"
           [ngClass]="{ outline_red: !email.valid && email.touched }"
           [(ngModel)]="contactData.email"
-          [ngModelOptions]="{ standalone: true }"
           type="email"
           placeholder="Email"
           required
@@ -58,7 +59,7 @@
           #message="ngModel"
           [ngClass]="{ outline_red: !message.valid && message.touched }"
           minlength="4"
-          [ngModelOptions]="{ standalone: true }"
+          name="message"
           [(ngModel)]="contactData.message"
           placeholder="Message"
           required
@@ -71,7 +72,7 @@
         <div class="policy-confirmation">
           <div class="terms_container">
             <div (click)="togglePrivacyPolicy()">
-              @if (privacyPolicyChecked == false) {
+              @if (!privacyPolicyChecked) {
               <img src="./assets/img/check_box_outline.svg" />
               } @else {
               <img src="./assets/img/check_box.svg" />

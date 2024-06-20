@@ -223,4 +223,9 @@ section {
     flex-direction: column;
     gap: 30px;
   }
+  .circle-container {
+    >.second-circle {
+      display: none;
+    }
+  }
 }
