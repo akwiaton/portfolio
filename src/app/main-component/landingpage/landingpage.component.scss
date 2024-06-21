@@ -270,9 +270,22 @@ h2 {
    }
  }
 
- @media only screen and (max-width: 350px) {
+ @media only screen and (max-width: 375px) {
   .ellipse {
     width: 170%;
+    left: -260px;
+    top: -160px;    
+   }
+ }
+
+ @media only screen and (max-width: 350px) {
+  .headline-content {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .ellipse {
+    width: 180%;
     left: -260px;
     top: -160px;    
    }
