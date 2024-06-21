@@ -1,6 +1,8 @@
 @import "./../../styles.scss";
 
 div {
+  max-width: 1440px;
+  margin: 0 auto;
     >img {
         width: 100px;
         padding: 100px 50px 0px 100px;
@@ -8,6 +10,8 @@ div {
 }
 section {
   padding: 100px;
+  max-width: 1440px;
+  margin: 0 auto;
   > h1 {
     font-family: "Baloo 2";
     font-size: 64px;

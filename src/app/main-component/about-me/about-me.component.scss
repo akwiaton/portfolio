@@ -1,6 +1,7 @@
 @import "./../../../styles.scss";
 
 .circle {
+ 
   display: flex;
   justify-content: center;
   > img {
@@ -12,15 +13,19 @@
 }
 
 section {
+  max-width: 1440px;
+  margin: 0 auto;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 100px;
+
 }
 
 .left-side {
   width: 50%;
+  z-index: 200;
   > p {
     color: $blue;
     font-family: "Baloo 2" !important;

@@ -6,6 +6,8 @@ section {
 }
 
 .my-work-headline {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -27,6 +29,8 @@ section {
 }
 
 .my-work-description {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,6 +45,8 @@ section {
 }
 
 .project-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
   width: 100%;
   display: flex;
   justify-content: flex-start;
