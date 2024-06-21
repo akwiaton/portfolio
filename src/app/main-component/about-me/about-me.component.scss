@@ -84,7 +84,7 @@ section {
 
 @media only screen and (max-width: 570px) {
   section {
-    padding: 0;
+    padding: 20px;
   }
   .left-side {
     > p {
@@ -94,6 +94,7 @@ section {
     }
   }
   .right-side {
+    margin-bottom: 50px;
     > p {
       font-size: 18px;
       line-height: 21px;
@@ -108,8 +109,16 @@ section {
   }
   .left-side {
     > p {
-      font-size: 36px;
+      font-size: 30px;
       line-height: 52px;
     }
   }
+}
+@media only screen and (max-width: 380px) {
+ .right-side {
+  >button {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+ }
 }
