@@ -1,7 +1,6 @@
 @import "./../../../styles.scss";
 
 section {
-  // height: 100%;
   padding: 100px;
   background-image: linear-gradient(
     rgba(255, 255, 255, 1),
@@ -206,17 +205,8 @@ section {
     }
   }
   .contact-form {
-    width: 100%;
-    // > form {
-    //   position: absolute;
-    //   z-index: 10;
-    // }
-    
+    width: 100%;   
   }
-  // .contact-info-under {
-  //   position: absolute;
-  //   z-index: 1;
-  // }
   .contact-scroll-up {
     > a {
       margin-top: 50px;
@@ -225,6 +215,9 @@ section {
 }
 
 @media only screen and (max-width: 450px) {
+  section {
+    padding: 20px;
+  }
   .contact-info {
     > h3 {
       font-size: 23px;

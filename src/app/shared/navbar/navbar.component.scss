@@ -9,7 +9,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  // position: fixed;
   top: 0;
   z-index: 800;
   > img {
@@ -26,9 +25,11 @@ nav {
     justify-content: flex-end;
     z-index: 800;
     > a {
-      &:hover {
-        font-weight: 600;
-        transform: scale(1.2);
+      min-width: 50px;
+        &:hover {
+          font-weight: 600;
+          transform: scale(1.2);        
+      }
       }
     }
   }
@@ -44,7 +45,7 @@ nav {
     margin-inline: 20px;
     transition: all 0.1s;
   }
-}
+// }
 
 .popup_background {
   height: 100%;

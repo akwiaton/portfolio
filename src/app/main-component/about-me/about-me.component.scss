@@ -15,7 +15,6 @@
 section {
   max-width: 1440px;
   margin: 0 auto;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,6 +97,7 @@ section {
     > p {
       font-size: 18px;
       line-height: 21px;
+      margin-bottom: 20px;
     }
   }
 }

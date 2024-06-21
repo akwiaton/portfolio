@@ -235,6 +235,9 @@ section {
 }
 
 @media only screen and (max-width: 566px) {
+  section {
+    padding: 20px;
+  }
   .my-work-headline {
     > h2 {
       font-size: 48px;
@@ -257,9 +260,4 @@ section {
     flex-direction: column;
     gap: 30px;
   }
-  // .circle-container {
-  //   >.second-circle {
-  //     display: none;
-  //   }
-  // }
 }

@@ -83,7 +83,6 @@ h2 {
   z-index: 1;
 }
 .ellipse {
-  // width: 1400px;
   width: 60%;
   height: auto;
   position: absolute;
@@ -259,7 +258,7 @@ h2 {
  @media only screen and (max-width: 416px) {
   .photo-wrapper {
     >img {
-      height: 500px;
+      height: 480px;
       width: auto;
     }
   }
@@ -271,21 +270,28 @@ h2 {
  }
 
  @media only screen and (max-width: 375px) {
-  .ellipse {
-    width: 170%;
-    left: -260px;
-    top: -160px;    
-   }
- }
-
- @media only screen and (max-width: 350px) {
   .headline-content {
     h1 {
       font-size: 40px;
     }
   }
   .ellipse {
-    width: 180%;
+    width: 160%;
+    left: -260px;
+    top: -160px;    
+   }
+ }
+
+ @media only screen and (max-width: 350px) {
+  .photo-wrapper {
+    >img {
+      height: 450px;
+      width: auto;
+    }
+  }
+
+  .ellipse {
+    width: 170%;
     left: -260px;
     top: -160px;    
    }
