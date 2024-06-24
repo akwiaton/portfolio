@@ -78,7 +78,6 @@ section {
     > input,
     > textarea {
       width: 100%;
-      max-width: 100%;
       height: 50px;
       border: 1px solid $blue;
       border-radius: 10px;
@@ -114,13 +113,6 @@ section {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
-  > label {
-    font-size: 16px;
-    line-height: 18px;
-  }
-  > input {
-    width: 24px;
-  }
 }
 
 .send-btn {
@@ -147,8 +139,8 @@ section {
     color: $blue;
     font-size: 16px;
     &:hover {
+      transform: scaleX(1); 
       text-decoration: underline;
-      font-weight: 700;
     }
   }
 }
