@@ -43,6 +43,29 @@
         "formErrorName": "Bitte geben Sie Ihren Namen ein",
         "formErrorEmail": "Bitte geben Sie Ihre E-Mail ein",
         "formErrorMessage": "Bitte  geben Sie Ihre Nachricht ein"
+    },
+
+    "POPUP": {
+        "messageHeader": "Vielen Dank!",
+        "message": "Ihre Nachricht wurde erfolgreich gesendet."
+    },
+
+    "LEGAL": {
+        "titel": "Impressum und Datenschutzerklärung",
+        "numberOne": "Datenschutz auf einen Blick",
+        "numberOneHeadline1": "Allgemeine Hinweise",
+        "numberOneHeadline1Text": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.",
+        "numberOneHeadline2": "Datenerfassung auf dieser Website",
+        "numberOneHeadline3": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+        "numberOneHeadline3Text": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.",
+        "numberOneHeadline4": "Wie erfassen wir Ihre Daten?",
+        "numberOneHeadlineText": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.",
+        "numberOneHeadline5": "Wofür nutzen wir Ihre Daten?",
+        "numberOneHeadline5Text": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.",
+        "numberOneHeadline6": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+        "numberOneHeadline6Text": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden."
+      
 
     }
+
 }
