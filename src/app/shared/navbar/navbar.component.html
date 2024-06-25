@@ -4,8 +4,8 @@
     <a href="#about-me">{{ "HEADER.aboutMe" | translate }}</a>
     <a href="#my-skills">{{ "HEADER.skillSet" | translate }}</a>
     <a href="#my-projects">{{ "HEADER.myWork" | translate }}</a>
-    <a (click)="translate.switchLanguage('de')" href="#">DE</a>|
-    <a (click)="translate.switchLanguage('en')" href="#">EN</a>
+    <a (click)="translate.switchLanguage('de')">DE</a>|
+    <a (click)="translate.switchLanguage('en')">EN</a>
   </div>
   <a class="burger-menu" (click)="toggleMenu(); changeLogo()"><img src="./assets/img/burger-menu.svg"/></a>
 
@@ -28,8 +28,8 @@
             "HEADER.contact" | translate
           }}</a>
           <div>
-           <a (click)="translate.switchLanguage('de')" href="#">DE</a> |
-          <a (click)="translate.switchLanguage('en')" href="#">EN</a>
+           <a (click)="translate.switchLanguage('de')">DE</a> |
+          <a (click)="translate.switchLanguage('en')">EN</a>
           </div>
         </div>
       </div>
