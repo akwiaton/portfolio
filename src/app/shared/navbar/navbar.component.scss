@@ -45,7 +45,15 @@ nav {
     margin-inline: 20px;
     transition: all 0.1s;
   }
-// }
+
+  .switchLanguage {
+    cursor: pointer;
+    &:hover {
+      font-weight: 600;
+      transform: scale(1.2);        
+  }
+  }
+
 
 .popup_background {
   height: 100%;
