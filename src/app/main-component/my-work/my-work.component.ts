@@ -47,6 +47,15 @@ export class MyWorkComponent {
     codeLink: "https://github.com/akwiaton/el_pollo_loco",
     isRowReverse: true,
   },
+  {
+    img: "./assets/img/project-3.1.png",
+    name: "Paddlergilde Kaiserslautern 1926 e.V.",
+    title: "WordPress | Google Analytics | Tag Manager",
+    description: "PROJECT.projectPadllergilde",
+    projectLink: "https://www.paddlergilde.de/",
+    codeLink: "https://github.com/akwiaton",
+    isRowReverse: false,
+  },
   ]
 
 }
