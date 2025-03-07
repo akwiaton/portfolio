@@ -5,9 +5,10 @@
     <a href="#my-skills">{{ "HEADER.skillSet" | translate }}</a>
     <a href="#my-projects">{{ "HEADER.myWork" | translate }}</a>
     <a class="switchLanguage" (click)="translate.switchLanguage('de')">DE</a>|
-    <a class="switchLanguage" (click)="translate.switchLanguage('en')">EN</a>
+    <a class="switchLanguage" (click)="translate.switchLanguage('en')">EN</a>|
+    <a class="switchLanguage" (click)="translate.switchLanguage('pl')">PL</a>
   </div>
-  <a class="burger-menu" (click)="toggleMenu(); changeLogo()"><img src="./assets/img/burger-menu.svg"/></a>
+  <a class="burger-menu" (click)="toggleMenu(); changeLogo()"><img src="./assets/img/mobile-menu.svg"/></a>
 
 </nav>
 @if (open) {
@@ -29,7 +30,8 @@
           }}</a>
           <div>
            <a class="switchLanguage" (click)="translate.switchLanguage('de')">DE</a> |
-          <a class="switchLanguage" (click)="translate.switchLanguage('en')">EN</a>
+          <a class="switchLanguage" (click)="translate.switchLanguage('en')">EN</a> |
+          <a class="switchLanguage" (click)="translate.switchLanguage('pl')">PL</a>
           </div>
         </div>
       </div>

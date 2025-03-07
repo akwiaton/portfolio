@@ -1,62 +1,50 @@
 @import "./../../../styles.scss";
 
 .circle {
- 
   display: flex;
   justify-content: center;
   > img {
     width: 206px;
     z-index: 90;
     position: absolute;
-    top: 93%;
+    top: 88%;
   }
 }
 
 section {
   max-width: 1440px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 100px;
-
 }
 
 .left-side {
-  width: 50%;
   z-index: 200;
-  > p {
+  > h1 {
     color: $blue;
     font-family: "Baloo 2" !important;
-    font-weight: 800;
-    font-size: 100px;
-    line-height: 110px;
-    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 60px;
+    margin: 44px 0;
+    text-align: center;
   }
 }
 
 .right-side {
-  width: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 100px;
-  margin-left: 180px;
+  flex-direction: column;
+  gap: 16px;
   > img {
     width: 82px;
     height: 82px;
   }
   > p {
     line-height: 27px;
+    text-align: justify;
   }
-}
-
-@media only screen and (max-width: 1460px) {
-  .left-side {
-    > p {
-      font-size: 80px;
-      letter-spacing: 0;
-    }
+  >button {
+    margin-top: 30px;
   }
 }
 
@@ -69,16 +57,11 @@ section {
     margin-top: 100px;
     width: 100%;
     text-align: center;
-    > p {
-      font-size: 64px;
-      line-height: 80px;
-    }
   }
   .right-side {
     margin-left: 0;
     width: 100%;
     align-items: center;
-    gap: 50px;
   }
 }
 
@@ -87,17 +70,17 @@ section {
     padding: 20px;
   }
   .left-side {
-    > p {
+    > h1 {
       font-size: 45px;
       letter-spacing: 0;
-      line-height: 54px;
+      line-height: 47px;
     }
   }
   .right-side {
     margin-bottom: 50px;
     > p {
-      font-size: 18px;
-      line-height: 21px;
+      font-size: 16px;
+      line-height: 19px;
       margin-bottom: 20px;
     }
   }
@@ -108,17 +91,17 @@ section {
     padding: 50px 20px 0 20px;
   }
   .left-side {
-    > p {
+    > h1 {
       font-size: 30px;
-      line-height: 52px;
+      line-height: 32px;
     }
   }
 }
 @media only screen and (max-width: 380px) {
- .right-side {
-  >button {
-    font-size: 18px;
-    padding: 10px 15px;
+  .right-side {
+    > button {
+      font-size: 18px;
+      padding: 10px 15px;
+    }
   }
- }
 }

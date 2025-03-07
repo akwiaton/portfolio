@@ -1,17 +1,17 @@
 <section id="my-projects">
     <div class="my-work-headline">
         <h2>{{ 'MYWORK.myWork' | translate }}</h2>
-        <img src="./assets/img/ellipse.svg" alt="circle">
+        <img src="./assets/img/bubble.svg" alt="circle">
     </div>
 
     <div class="my-work-description">
         <p>{{ 'MYWORK.myWorkDescription' | translate }}</p>
-        <img src="./assets/img/ellipse.svg" alt="circle">
+        <img src="./assets/img/bubble.svg" alt="circle">
     </div>
     <div class="circle-container">
-        <img class="first-circle" src="./assets/img/ellipse.svg" >
-        <img class="second-circle" src="./assets/img/ellipse.svg" >
-        <img class="third-circle" src="./assets/img/ellipse.svg" >
+        <img class="first-circle" src="./assets/img/bubble.svg" >
+        <img class="second-circle" src="./assets/img/bubble.svg" >
+        <img class="third-circle" src="./assets/img/bubble.svg" >
     </div>
 @for (project of projects; track $index) {
     <div class="project-wrapper" [ngClass]="{'rowReverse':project.isRowReverse}">

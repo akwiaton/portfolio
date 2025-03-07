@@ -41,6 +41,7 @@ section {
   > img {
     width: 183px;
     height: 183px;
+    transform: rotate(90deg);
   }
 }
 
@@ -135,6 +136,7 @@ section {
   z-index: -1;
   width: 47%;
   height: auto;
+  transform: rotate(180deg);
 }
 
 .third-circle {
@@ -144,6 +146,7 @@ section {
   z-index: -1;
   width: 5%;
   height: auto;
+  transform: rotate(270deg);
 }
 
 @media only screen and (max-width: 1148px) {
@@ -259,5 +262,16 @@ section {
   .project-links {
     flex-direction: column;
     gap: 30px;
+  }
+  .project-name {
+    >p {
+      font-size: 28px;
+      line-height: 32px;
+      margin: 4px;
+    }
+    >span {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 }
