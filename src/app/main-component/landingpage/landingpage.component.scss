@@ -65,12 +65,13 @@ section {
 }
 
 .developer-text {
+  position: relative;
   color: $blue;
   font-family: "Baloo 2";
   font-size: 128px;
   font-weight: 800;
   line-height: 128px;
-  z-index: 1;
+  z-index: 10;
 }
 
 h2 {
@@ -107,13 +108,13 @@ h2 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  // margin-right: 30px;
   .slide-in {
     color: #5988ff;
     font-size: 28px;
     font-weight: 500;
     margin: 6px;
     position: relative;
+    z-index: 10;
     animation: slideIn 1s ease-in-out forwards;
     animation-delay: 0.5s;
     opacity: 0;
@@ -214,26 +215,39 @@ h2 {
     width: 90%;
   }
 }
+
+@media only screen and (max-width: 950px) {
+  .text-wrapper {
+    margin-bottom: 80px;
+    .developer-text {
+      font-size: 64px;
+      line-height: 60px;
+      > p {
+        margin: 0 0 0;
+        font-size: 50px;
+        line-height: 52px;
+      }
+    }
+    .slide-in {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 50px;
+    }
+  }
+
+}
 @media only screen and (max-width: 690px) {
   .developer-text {
     color: white;
-    font-size: 64px;
-    line-height: 60px;
-    > p {
-      margin: 0 0 0;
-      font-size: 50px;
-      line-height: 52px;
-    }
   }
   .headline-content {
     .slide-in {
       color: white;
-      font-size: 24px;
     }
   }
   h2 {
     color: white;
-    font-size: 50px;
   }
   .photo-wrapper {
     right: 0;
@@ -257,8 +271,6 @@ h2 {
     margin-top: 100px;
     margin-left: 10px;
     .slide-in {
-      color: white;
-      z-index: 99;
       margin: 0 4px;
     }
   }
@@ -284,9 +296,17 @@ h2 {
 }
 
 @media only screen and (max-width: 502px) {
-  h2 {
-    font-size: 30px;
-    line-height: 30px;
+  .text-wrapper {
+    h2 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    .developer-text {
+    font-size: 50px;
+    line-height: 50px;
+    }
+
   }
   .headline-content {
     margin-top: 100px;

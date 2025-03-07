@@ -2,7 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { TranslationService } from '../../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
-
+import {
+  MatDialog,
+  MatDialogConfig,
+  MatDialogModule,
+} from '@angular/material/dialog';
+import { ReviewDialogComponent } from './review-dialog/review-dialog.component';
 
 interface Project {
 [x: string]: any;
@@ -20,13 +25,15 @@ interface Project {
 @Component({
   selector: 'app-my-work',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, MatDialogModule ],
   templateUrl: './my-work.component.html',
   styleUrl: './my-work.component.scss'
 })
 export class MyWorkComponent {
 
   translate = inject(TranslationService);
+
+  constructor(public dialog: MatDialog) {}
 
   projects: Project[] = [
   {
@@ -53,9 +60,12 @@ export class MyWorkComponent {
     title: "WordPress | Google Analytics | Tag Manager",
     description: "PROJECT.projectPadllergilde",
     projectLink: "https://www.paddlergilde.de/",
-    codeLink: "https://github.com/akwiaton",
+    codeLink: "",
     isRowReverse: false,
   },
   ]
 
+  reviewDialog() {
+    this.dialog.open(ReviewDialogComponent);
+  }
 }
