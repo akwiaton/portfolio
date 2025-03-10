@@ -25,6 +25,7 @@ section {
     width: 108px;
     height: 108px;
     margin-bottom: 120px;
+    animation: float2 7s ease-in-out infinite;
   }
 }
 
@@ -42,6 +43,7 @@ section {
     width: 183px;
     height: 183px;
     transform: rotate(90deg);
+    animation: float 6s ease-in-out infinite;
   }
 }
 
@@ -122,11 +124,12 @@ section {
 
 .first-circle {
   position: absolute;
-  left: -180px;
+  left: -100px;
   top: 200px;
   z-index: -1;
   width: 27%;
   height: auto;
+  animation: float4 9s ease-in-out infinite; 
 }
 
 .second-circle {
@@ -137,6 +140,7 @@ section {
   width: 47%;
   height: auto;
   transform: rotate(180deg);
+  animation: float3 8s ease-in-out infinite;
 }
 
 .third-circle {
@@ -147,6 +151,7 @@ section {
   width: 5%;
   height: auto;
   transform: rotate(270deg);
+  animation: float 6s ease-in-out infinite;
 }
 
 @media only screen and (max-width: 1148px) {

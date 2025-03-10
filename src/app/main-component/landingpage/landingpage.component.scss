@@ -320,7 +320,6 @@ h2 {
 
 @media only screen and (max-width: 480px) {
   .photo-wrapper {
-    top: 0;
     > img {
       height: 600px;
       width: auto;
@@ -341,10 +340,12 @@ h2 {
   }
   .headline-content {
     .slide-in {
+      font-size: 18px;
       width: 80%;
     }
     .developer-text {
       font-size: 40px;
+      line-height: 42px;
     }
   }
 }
