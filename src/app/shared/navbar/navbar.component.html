@@ -1,12 +1,16 @@
 <nav>
    <img [src]="logoUrl" alt="logo">
-  <div id="myLinks">
-    <a href="#about-me">{{ "HEADER.aboutMe" | translate }}</a>
-    <a href="#my-skills">{{ "HEADER.skillSet" | translate }}</a>
-    <a href="#my-projects">{{ "HEADER.myWork" | translate }}</a>
-    <a class="switchLanguage" (click)="translate.switchLanguage('de')">DE</a>|
-    <a class="switchLanguage" (click)="translate.switchLanguage('en')">EN</a>|
-    <a class="switchLanguage" (click)="translate.switchLanguage('pl')">PL</a>
+  <div class="link-container" id="myLinks">
+    <div>
+      <a href="#about-me">{{ "HEADER.aboutMe" | translate }}</a>
+      <a href="#my-skills">{{ "HEADER.skillSet" | translate }}</a>
+      <a href="#my-projects">{{ "HEADER.myWork" | translate }}</a>
+    </div>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="DE" (click)="translate.switchLanguage('de')">DE</mat-button-toggle>
+      <mat-button-toggle value="EN" (click)="translate.switchLanguage('en')">EN</mat-button-toggle>
+      <mat-button-toggle value="PL" (click)="translate.switchLanguage('pl')">PL</mat-button-toggle>
+    </mat-button-toggle-group>
   </div>
   <a class="burger-menu" (click)="toggleMenu(); changeLogo()"><img src="./assets/img/mobile-menu.svg"/></a>
 
@@ -28,11 +32,11 @@
           <a href="#contact" (click)="closeMenu(); changeLogo()">{{
             "HEADER.contact" | translate
           }}</a>
-          <div>
-           <a class="switchLanguage" (click)="translate.switchLanguage('de')">DE</a> |
-          <a class="switchLanguage" (click)="translate.switchLanguage('en')">EN</a> |
-          <a class="switchLanguage" (click)="translate.switchLanguage('pl')">PL</a>
-          </div>
+          <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+            <mat-button-toggle value="DE" (click)="translate.switchLanguage('de')">DE</mat-button-toggle>
+            <mat-button-toggle value="EN" (click)="translate.switchLanguage('en')">EN</mat-button-toggle>
+            <mat-button-toggle value="PL" (click)="translate.switchLanguage('pl')">PL</mat-button-toggle>
+          </mat-button-toggle-group>
         </div>
       </div>
     </div>

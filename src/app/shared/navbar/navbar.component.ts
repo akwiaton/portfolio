@@ -2,11 +2,12 @@ import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, inject, HostListener } from '@angular/core';
 import { TranslationService } from '../../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, MatButtonToggleModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })

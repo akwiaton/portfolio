@@ -11,12 +11,18 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
-
   translate = inject(TranslationService);
+
+
+
 
   goToContact() {
     if (window) {
       window.location.href = '#contact';
     }
   }
+
+ 
+
+
 }

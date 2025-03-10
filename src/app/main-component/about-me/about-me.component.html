@@ -2,16 +2,16 @@
   <img class="ellipse" src="./assets/img/bubble.svg" alt="" />
 </div>
 <section>
-  <div class="left-side">
+  <div class="left-side in-view">
     <h1>{{ "ABOUTME.workTogether" | translate }}</h1>
   </div>
 
-  <div class="right-side">
+  <div class="right-side in-view">
     <!-- <img class="ellipse-small" src="./assets/img/ellipse.png" alt="" /> -->
     <p>{{ "ABOUTME.workTogetherText1" | translate }}</p>
     <p>{{ "ABOUTME.workTogetherText2" | translate }}</p>
     <p>{{ "ABOUTME.workTogetherText3" | translate }}</p>
     <p>{{ "ABOUTME.workTogetherText4" | translate }}</p>
-    <button (click)="goToContact()">{{ 'ABOUTME.send' | translate }}</button>
+    <button class="btn" (click)="goToContact()">{{ 'ABOUTME.send' | translate }}</button>
   </div>
 </section>
