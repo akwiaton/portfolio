@@ -88,6 +88,11 @@ section {
       margin-bottom: 20px;
     }
   }
+  .circle {
+    > img {
+      width: 114px;
+    }
+  }
 }
 
 @media only screen and (max-width: 430px) {

@@ -56,6 +56,11 @@ nav {
     box-shadow: none;
     border-radius: 30px;
     height: 48px;
+    
+}
+
+mat-button-toggle {
+  color: $blue;
 }
 
 .popup_background {
