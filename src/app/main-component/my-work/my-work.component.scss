@@ -238,6 +238,11 @@ section {
   }
 
   .circle-container {
+    .first-circle {
+      width: 176px;
+      top: 400px;
+      left: 150px;
+    }
     .second-circle {
       top: 700px;
       right: -90px;
@@ -245,8 +250,8 @@ section {
       height: auto;
     }
     .third-circle {
-      top: 1700px;
-      right: 100px;
+      top: 1870px;
+      right: -13px;
     }
     .fourth-circle {
       top: 1300px;

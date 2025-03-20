@@ -1,0 +1,77 @@
+@import "./../../styles.scss";
+
+section {
+  padding: 100px 100px 150px 100px;
+  overflow: clip;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(89, 136, 255),
+    rgb(89, 136, 255),
+    rgb(0, 67, 240)
+  );
+  color: white;
+}
+
+h2 {
+  font-family: "Baloo 2";
+  font-size: 96px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+.review-wrapper {
+//   max-width: 1440px;
+width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.review-container {
+  width: 500px;
+  height: 400px;
+  padding: 40px 30px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.2);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+
+  > p {
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+    color: #686868;
+  }
+  span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .review-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    section {
+        padding: 50px 50px 50px 50px;
+      }
+    h2 {
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 50px;
+    }
+    .review-container {
+        width: 100%;
+        height: auto;
+    }
+}
