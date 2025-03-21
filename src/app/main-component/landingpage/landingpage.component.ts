@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, HostListener } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { TranslationService } from '../../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
@@ -14,4 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
 export class LandingpageComponent {
 
   translate = inject(TranslationService);
+
+
+  
 }

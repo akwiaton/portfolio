@@ -32,6 +32,12 @@
     "projectPolloLoco":"El Pollo Loco to gra oparta na programowaniu obiektowym. Wypróbuj ją i pomóż głównemu bohaterowi Pepe zbierać monety i butelki tabasco, aby pod koniec gry walczyć z szalonym kogutem. Dobrej zabawy!",
     "projectPadllergilde": "Udany relaunch strony internetowej lokalnego stowarzyszenia wioślarskiego. Dzięki nowoczesnemu, spójnemu i responsywnemu designowi (UX/UI), segmentacji odbiorców, dopasowanych treści i analizie wyników, Paddlergilde udało się zbudować silną markę, zdobyć nowych członków i zmniejszyć ilość papierkowej roboty."
   },
+
+  "REVIEW": {
+    "reviews": "Rekomendacje",
+    "review1": "Jesteśmy niezwykle zadowoleni z realizacji naszej nowej firmowej strony internetowej. Od samego początku nasze indywidualne potrzeby i oczekiwania zostały uwzględnione, co zaowocowało odpowiednim rozwiązaniem, które zdecydowanie przerosło nasze oczekiwania. Współpraca z Panią była zawsze profesjonalna, przyjazna i nastawiona na znalezienie rozwiązań. Z pełnym przekonaniem możemy polecić Pani usługi i serdecznie dziękujemy za znakomitą pracę!",
+    "review2": "Dzięki niesamowitemu wsparciu Alicji udało nam się stworzyć świetną stronę internetową dla naszego stowarzyszenia. Wykonuje ona pracę na najwyższym poziomie ma świetne pomysły i realizuje projekty błyskawicznie. Współpraca z nią to była czysta przyjemność!"
+  },
   
   "CONTACT": {
       "contact": "Kontakt",

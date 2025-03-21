@@ -4,7 +4,7 @@ section {
   padding: 100px 100px 150px 100px;
   overflow: clip;
   background-image: linear-gradient(
-    to bottom right,
+    to top left,
     rgb(89, 136, 255),
     rgb(89, 136, 255),
     rgb(0, 67, 240)
@@ -58,12 +58,13 @@ width: 100%;
 
     .review-wrapper {
         flex-direction: column;
+        gap: 50px;
     }
 }
 
 @media only screen and (max-width: 640px) {
     section {
-        padding: 50px 50px 50px 50px;
+        padding: 50px 45px;
       }
     h2 {
         font-size: 48px;
@@ -72,6 +73,10 @@ width: 100%;
     }
     .review-container {
         width: 100%;
-        height: auto;
+        height: 350px;
+        >p  {
+          font-size: 16px;
+          line-height: 20px;
+        }
     }
 }

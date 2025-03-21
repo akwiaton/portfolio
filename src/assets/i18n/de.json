@@ -35,6 +35,12 @@
     "projectPadllergilde": "Ein erfolgreicher Relaunch der Website eines Paddelvereins aus Kaiserslautern. Das Ziel war es, die Webseite zu verbessern und eine Plattform zu entwickeln, die einen echten Informationsmehrwert für Mitglieder, Neumitglieder und sonstige Paddelinteressierte der Region bietet."
   },
 
+  "REVIEW": {
+    "reviews": "Rezensionen",
+    "review1": "Wir sind äußerst zufrieden mit der Gestaltung unserer neuen Geschäftswebseite. Von Anfang an wurde auf unsere individuellen Wünsche und Aforderungen eingegangen, wodurch ein maßgeschneidertes Ergebnis entstanden ist, das unsere Erwartungen bei weitem übertroffen hat. Die Zusammenarbeit mit Ihnen war jederzeit professionell, freundlich und lösungsorientiert. Wir können die Dienstleistung uneingeschränkt weiterempfehlen und danken Ihnen für dir herausragende Arbeit!",
+    "review2": "Dank der tollen Unterstützung von Alicja haben wir eine super Vereinshomepage bekommen. Sie liefert erstklassige Arbeit, bringt eigene Ideen sinnvoll ein und ist schnell in der Umsetzung. Wir sind mit der Zusammenarbeit sehr zufrieden gewesen."
+  },
+
   "CONTACT": {
     "contact": "Kontakt",
     "contactHeadline": "Wie kann ich helfen?",
