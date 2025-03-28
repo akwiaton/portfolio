@@ -15,18 +15,12 @@ import { RouterModule } from '@angular/router';
 export class NavbarComponent {
   isScreenSmall: boolean = false;
   open = false;
-  logoUrl = './assets/img/logo.png';
+  logoUrl = './assets/img/logo-ak.svg';
 
 
 translate = inject(TranslationService);
 
-changeLogo() {
-  if (this.open) {
-    this.logoUrl = './assets/img/logo-blue.svg';
-  } else {
-    this.logoUrl = './assets/img/logo.png';
-  }
-}
+
 
 toggleMenu() {
   if (this.open == false) {

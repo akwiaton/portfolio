@@ -28,6 +28,7 @@
   },
   
   "PROJECT": {
+    "projectDabubble":"DaBubble umożliwia użytkownikom szybki i dobrze zorganizowany sposób pracy. Cała komunikacja opiera się na kanałach, które można sprawnie stworzyć, dołączyć do nich, użyć opcji wyszukiwania oraz w razie potrzeby opuścić. Użytkownicy mogą współpracować w ramach zespołu i nawiązywać kontakty w jednym, centralnym miejscu. Zainspirowany Slackiem, DaBubble zapewnia wszystkie funkcje potrzebne do efektywnej współpracy.",
     "projectJoin": "To poręczne narzędzie, które służy do organizacji projektów. Funkcja Drag-and-Drop pomaga w lepszej organizacji i ustalaniu priorytetów zadań. Jako narzędzie do organizacji pracy zespołowej posiada funkcję przydzielania użytkownikom (członkom zespołu) określonych zadań.",
     "projectPolloLoco":"El Pollo Loco to gra oparta na programowaniu obiektowym. Wypróbuj ją i pomóż głównemu bohaterowi Pepe zbierać monety i butelki tabasco, aby pod koniec gry walczyć z szalonym kogutem. Dobrej zabawy!",
     "projectPadllergilde": "Udany relaunch strony internetowej lokalnego stowarzyszenia wioślarskiego. Dzięki nowoczesnemu, spójnemu i responsywnemu designowi (UX/UI), segmentacji odbiorców, dopasowanych treści i analizie wyników, Paddlergilde udało się zbudować silną markę, zdobyć nowych członków i zmniejszyć ilość papierkowej roboty."

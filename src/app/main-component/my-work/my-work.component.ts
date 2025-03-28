@@ -4,7 +4,6 @@ import { TranslationService } from '../../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 
-
 interface Project {
 [x: string]: any;
   img: string;
@@ -15,8 +14,6 @@ interface Project {
   codeLink: string;
   isRowReverse: boolean
 }
-
-
 
 @Component({
   selector: 'app-my-work',
@@ -32,6 +29,15 @@ export class MyWorkComponent {
   constructor() {}
 
   projects: Project[] = [
+    // {
+    //   img: "./assets/img/project-4.1.svg",
+    //   name: "DaBubble",
+    //   title: "Angular | TypeScript | Firebase | Material Design",
+    //   description: "PROJECT.projectDabubble",
+    //   projectLink: "https://da-bubble.alicja-kwiaton.de",
+    //   codeLink: "https://github.com/DonDomenico/DABubble",
+    //   isRowReverse: true,
+    // },
   {
     img: "./assets/img/project-2.1.png",
     name: "Join",

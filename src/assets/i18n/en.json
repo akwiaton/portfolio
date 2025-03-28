@@ -29,6 +29,7 @@
 },
 
 "PROJECT": {
+  "projectDabubble":"DaBubble offers its users a fast and well-organized way to work. Communication is streamlined into channels that are easy to create, join, search, and leave whenever needed. Teams can collaborate and connect in a single, centralized space. Drawing inspiration from Slack, DaBubble provides all the features needed for productive teamwork.",
   "projectJoin": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
   "projectPolloLoco":"A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the giant Chicken. Have fun!",
   "projectPadllergilde": "A successful relaunch of the website for a local paddle association. Through modern, consistent, and responsive design (UX/UI), audience segmentation, content creation, and performance analysis, Paddlergilde was able to build a strong brand, gain new members, and reduce paperwork."

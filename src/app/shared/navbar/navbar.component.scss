@@ -7,7 +7,7 @@ nav {
   overflow: hidden;
   font-family: "Montserrat";
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   .logo-header {
     > img {
@@ -56,6 +56,7 @@ a {
   box-shadow: none;
   border-radius: 30px;
   height: 48px;
+  margin-right: 10px;
 }
 
 mat-button-toggle {

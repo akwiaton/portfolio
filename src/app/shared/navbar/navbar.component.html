@@ -6,6 +6,7 @@
       <a href="#my-skills">{{ "HEADER.skillSet" | translate }}</a>
       <a href="#my-projects">{{ "HEADER.myWork" | translate }}</a>
       <a href="#review">{{ "REVIEW.reviews" | translate }}</a>
+      <a href="#contact">{{ "HEADER.contact" | translate }}</a>
     </div>
     <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
       <mat-button-toggle value="DE" (click)="translate.switchLanguage('de')">DE</mat-button-toggle>
@@ -13,24 +14,27 @@
       <mat-button-toggle value="PL" (click)="translate.switchLanguage('pl')">PL</mat-button-toggle>
     </mat-button-toggle-group>
   </div>
-  <a class="burger-menu" (click)="toggleMenu(); changeLogo()"><img src="./assets/img/mobile-menu.svg"/></a>
+  <a class="burger-menu" (click)="toggleMenu()"><img src="./assets/img/mobile-menu.svg"/></a>
 
 </nav>
 @if (open) {
     <div class="popup_background">
       <div class="popup">
         <div class="link_container_mobile">
-          <img (click)="closeMenu(); changeLogo()" src="./assets/img/close-btn.svg" alt="">
-          <a href="#about-me" (click)="closeMenu(); changeLogo()">{{
+          <img (click)="closeMenu()" src="./assets/img/close-btn.svg" alt="">
+          <a href="#about-me" (click)="closeMenu()">{{
             "HEADER.aboutMe" | translate
           }}</a>
-          <a href="#my-skills" (click)="closeMenu(); changeLogo()">{{
+          <a href="#my-skills" (click)="closeMenu()">{{
             "HEADER.skillSet" | translate
           }}</a>
-          <a href="#my-projects" (click)="closeMenu(); changeLogo()">{{
+          <a href="#my-projects" (click)="closeMenu()">{{
             "HEADER.myWork" | translate
           }}</a>
-          <a href="#contact" (click)="closeMenu(); changeLogo()">{{
+             <a href="#review" (click)="closeMenu()">{{
+              "REVIEW.reviews" | translate
+            }}</a>
+          <a href="#contact" (click)="closeMenu()">{{
             "HEADER.contact" | translate
           }}</a>
           <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
